@@ -8,6 +8,12 @@ def main( argv ):
     # create a window 
     win = gr.GraphWin( "My window", 500, 500 )
 
+    # create a circle
+    c = gr.Circle( gr.Point ( 250, 250), 10 )
+
+    # draw the circle inot the window 
+    c.draw( win )
+
     # pause until user gets mouse
     win.getMouse()
     win.close()
