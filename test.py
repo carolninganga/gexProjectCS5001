@@ -43,7 +43,7 @@ def interactive():
     # begin event loop
     while True: #infinite loop
 
-        if counter % 30 == 0:
+        if counter % 80 == 0:
             if falling != None:
                 falling.undraw()
             falling = gr.Circle( gr.Point( random.randint(0, 500), 0 ), 10)
