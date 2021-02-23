@@ -26,19 +26,25 @@ def init_rocket(x, y, scale):
 
 def main():
     # Create a GraphWin window that is at least 400 x 400
+    win = gr.GraphWin( "My window", 400, 400 )
 
     # This part can cause issues. Remember that the return value of this function
     # IS A LIST CONTAINING ZELLE SHAPE OBJECTS NOT PYTHON OBJECTS.
     # assign to rocket1 the result of calling init_rocket with arguments 100, 300, 1
+    rocket1 = gr.init_rocket( 100, 300, 1)
 
     # Look up python for each loops
     # for each shape in rocket1
         # draw the shape into the window
+        
+    body.draw( win )
 
     # wait for a mouse click
+    win.getMouse()
     # close the window
+    win.close()
 
-    
+    return
 
 if __name__ == "__main__":
     main()
